@@ -1,13 +1,13 @@
 {
 	"scripts": {
-		"format-code-html": "prettier --check --write \"index.html\"",
-		"format-code-css": "prettier --check --write \"styles/**\"",
-		"format-code-js": "prettier --check --write \"scripts/**\"",
-		"lint-styles": "stylelint \"styles/**/*.css\"",
-		"fix-styles": "stylelint \"styles/**/*.css\" --fix",
-		"lint-scripts": "eslint \"scripts/**/*.js\"",
-		"fix-scripts": "eslint \"scripts/**/*.js\" --fix",
-		"dev": "node server.js"
+		"dev": "node server.js",
+		"check-all": "npm run format-code && npm run lint-styles && npm run lint-scripts",
+		"fix-all": "npm run fix-styles && npm run fix-scripts",
+		"format-code": "prettier  --check --write \"public/**\"",
+		"lint-styles": "stylelint \"public/styles/**/*.css\"",
+		"fix-styles": "stylelint \"public/styles/**/*.css\" --fix",
+		"lint-scripts": "eslint \"public/scripts/**/*.js\"",
+		"fix-scripts": "eslint \"public/scripts/**/*.js\" --fix"
 	},
 	"devDependencies": {
 		"eslint": "^8.23.1",
