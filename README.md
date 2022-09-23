@@ -1,4 +1,7 @@
 # practice-13
 
-- EditorConfig
-- Prettier
+-   EditorConfig
+-   Prettier
+-   Stylelint
+-   ESLint
+-   Live Server
